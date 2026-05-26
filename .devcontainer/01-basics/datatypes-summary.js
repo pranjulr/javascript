@@ -35,15 +35,16 @@ console.log(typeof bigNumber); // number
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++
 
-//Stack (Primitive, Value Copy)
-//Heap (Non-Primitive, Reference)
+//Stack Memory (Primitive, Value Copy)
+//Heap Memory (Non-Primitive, Reference)
 
 let firstName = "Pranjul"; // stored in stack
 let lastName = firstName; // stored in stack, but it is a copy of the value stored in firstName
 
 lastName = "Singh"; 
 
-console.log(lastName); // Pranjul   
+console.log(lastName); // Singh 
+console.log(firstName); // Pranjul  
 
 let userObj1 = {
     name: "Pranjul",
